@@ -12,6 +12,35 @@ body {
     width: 400px;
     position: absolute;
     top: 50%;
-    left:50%;
-    transform: translate (-50%, -50% rotate(45deg))
+    left:25%;
+    transform: translate (-50%, -50% )
+      
 } 
+.liquid {
+    animation: liquid 10s infinite;
+}
+
+@keyframes liquid {
+    0%   {top: 0px;}
+  25%  {top: 200px;}
+  50%  {top: 100px}
+  65% {top: 300px;}
+  80% {top:200px}
+  100% {top:400px}
+
+}
+.parent2 {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    left:75%;
+
+}
+.child2 {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
